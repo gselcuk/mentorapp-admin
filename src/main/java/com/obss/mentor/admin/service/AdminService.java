@@ -28,4 +28,13 @@ public class AdminService {
     return adminObjectRepository.save(adminObject);
   }
 
+  /**
+   * 
+   * @param objectType
+   * @return
+   */
+  public AdminObject getAdminObject(String objectType) {
+    return adminObjectRepository.findById(AdminObjectType.valueOfLabel(objectType)).orElse(null);
+  }
+
 }
