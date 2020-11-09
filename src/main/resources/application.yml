@@ -8,7 +8,7 @@ spring:
   application:
     name: mentorapp-admin
   datasource:
-    url: jdbc:h2:file:./data/mentorapp-admin
+    url: jdbc:h2:file:./data/mentorapp-admin;;AUTO_RECONNECT=TRUE
     driverClassName: org.h2.Driver
     username: admin
     password: password
